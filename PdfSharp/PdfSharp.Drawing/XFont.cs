@@ -616,6 +616,22 @@ namespace PdfSharp.Drawing
     internal int cellAscent;
     internal int cellDescent;
 
+    public int CellAscent
+        {
+            get { return cellAscent; }
+            internal set { cellAscent = value; }
+        }
+
+        public int CellDescent
+        {
+            get { return cellDescent; }
+            internal set { cellDescent = value; }
+        }
+        public int CellSpace
+        {
+            get { return cellSpace; }
+            internal set { cellSpace = value; }
+        }
     /// <summary>
     /// Cache PdfFontTable.FontSelector to speed up finding the right PdfFont
     /// if this font is used more than once.
